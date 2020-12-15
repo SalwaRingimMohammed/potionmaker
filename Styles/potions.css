@@ -1,0 +1,208 @@
+@font-face{
+    font-family: 'endor';
+    src: url('../Fonts/ENDOR___.ttf');
+}
+
+@font-face{
+    font-family: 'endor alt';
+    src: url('../Fonts/ENDORALT.ttf');
+}
+
+@font-face{
+    font-family: 'georgia';
+    src: url(../Fonts/georgia.ttf);
+}
+
+h1{
+    font-family: endor, cursive;
+    color: #32C4DB;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: #5412D5; 
+    font-size: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+
+
+h2{
+    font-family: endor alt, cursive;
+    color:#32C4DB;
+    -webkit-text-stroke-width: 0.1px; 
+    -webkit-text-stroke-color: #5412D5; 
+    font-size: 80px;
+    margin: 0px 0px 35px;
+}
+
+h3{
+    font-family: georgia, serif;
+    color: #5412D5;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+h4{
+    color: white;
+}
+
+p, .text{
+    font-family: bahnschrift, sans-serif;
+    text-align: center;
+}
+
+.text{
+    font-size: 35px;
+    animation-name: textanim;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    font-family: endor, cursive;
+    margin-top: 0;
+    letter-spacing: 3px;
+}
+
+@keyframes textanim {
+    from {color: white}
+    to {color: #32C4DB;
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: #5412D5;}
+}
+
+#main > p{
+    white-space: pre-wrap;
+}
+
+#main > p > a:link{
+    color: #5412D5;
+    text-decoration-color: #5412D5;
+    text-decoration-line: none;
+    font-weight: 700;
+}
+
+#main > p > a:visited{
+    color: #5412D5;
+    text-decoration-color: #5412D5;
+    text-decoration-line: none;
+}
+
+#main > p > a:active, main > p > a:hover{
+    background-color: #32C4DB;
+}
+
+footer > a, #back{
+    font-family: georgia, serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: white;
+    background-color: #5412D5;
+    border: #5412D5;
+    border-style: solid;
+    padding: 10px;
+    text-decoration-line: none;
+}
+
+footer{
+    display: flex;
+    justify-content:space-between;
+    height: 45px;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#back{
+    margin: auto;
+    margin-top: 50px;
+    padding: 15px;
+    border-color: #490BC3;
+}
+
+button{
+    font-family: georgia, serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: #5412D5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: #32C4DB;
+    border-style: solid;
+    width: 200px;
+    height: 60px;
+    margin: 20px 0;
+    
+}
+
+#sec0{
+    position: relative;
+}
+
+#trash{
+    width: 30px;
+}
+
+#empty{
+    position: absolute;
+    background-color: #5412D5;
+    border-color: #490BC3;
+    width: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+    font-weight: 500;
+    left: 1200px;
+}
+
+
+#sec1, #sec2, #sec3{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-flow: column;
+    width: 200px;
+    margin: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#sec2{
+    width: 450px;
+    padding-top: 70px;
+}
+
+#cauldron{
+    width: 300px;
+    margin: auto;
+}
+
+.potion{
+    width: 300px;
+    animation-name: potionanim;
+    animation-duration: 2s;
+    margin: auto;
+}
+
+@keyframes potionanim {
+    from {width: 1000px}
+    to {width: 300px}
+}
+
+#sec2 > button{
+    background-color: #32C4DB;
+    color: white;
+    border-color: #5412D5;
+    margin: 40px auto;
+    margin-bottom: 100px;
+}
+
+#art1, #art2{
+    display: flex;
+    justify-content: center;
+}
